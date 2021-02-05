@@ -14,6 +14,9 @@ Working Diary [Link](working-diary.md)
 # Linux Notes 
 A collection of my notes while using Linux [Link](notes/linux.md)
 
+# WSL
+
+Dedicated notes on WSL [Link](notes/wsl.md)
 # Python Notes
 
 Similarly, a place to put my notes while using Python, for easy reference [Link](notes/python.md)

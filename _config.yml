@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: [Shiba2046's rambling]
-description: [An attempt at Github Pages ]
+description: [A first attempt at Github Pages ]
 lsi: true
-safe: true
+safe: false
