@@ -11,3 +11,5 @@ Readme [Link](/README.md)
 
 Working Diary [Link](working-diary.md)
 
+# Linux Notes 
+A collection of my notes while using Linux [Link](linux.md)
