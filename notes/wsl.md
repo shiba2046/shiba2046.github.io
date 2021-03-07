@@ -27,3 +27,18 @@ permalink: /wsl/
   ```
   echo xfce4-session > ~/.xsession
   ```
+
+
+# ADB send text
+
+Need replace space ` ` with `%s`
+```bash
+# ADB send text
+ast(){
+  adb shell input text "${1/ /%s}"
+}
+```
+
+asf(){
+  adb push ${$1} /sdcard/Download/
+}
