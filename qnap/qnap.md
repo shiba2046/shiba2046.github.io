@@ -28,15 +28,15 @@ curl https://sub.chiba.bar/link/clash -o clash
 
 curl localhost:7090/configs -X PUT -d '{"path": "/root/.config/clash/config.yaml"}'
 
-curl localhost:7090/proxies/Proxy -X PUT -d '{"name":"By Speed"}'
-curl localhost:7090/proxies/Domestic -X PUT -d '{"name":"DIRECT"}'
-curl localhost:7090/proxies/Others -X PUT -d '{"name":"DIRECT"}'
-curl localhost:7090/proxies/AdBlock -X PUT -d '{"name":"REJECT"}'
-curl localhost:7090/proxies/AsianTV -X PUT -d '{"name":"DIRECT"}'
-curl localhost:7090/proxies/GlobalTV -X PUT -d '{"name":"Proxy"}'
-curl localhost:7090/proxies/Telegram -X PUT -d '{"name":"Proxy"}'
-curl localhost:7090/proxies/Speedtest -X PUT -d '{"name":"DIRECT"}'
-curl localhost:7090/proxies/Microsoft -X PUT -d '{"name":"DIRECT"}'
+# curl localhost:7090/proxies/Proxy -X PUT -d '{"name":"By Speed"}'
+# curl localhost:7090/proxies/Domestic -X PUT -d '{"name":"DIRECT"}'
+# curl localhost:7090/proxies/Others -X PUT -d '{"name":"DIRECT"}'
+# curl localhost:7090/proxies/AdBlock -X PUT -d '{"name":"REJECT"}'
+# curl localhost:7090/proxies/AsianTV -X PUT -d '{"name":"DIRECT"}'
+# curl localhost:7090/proxies/GlobalTV -X PUT -d '{"name":"Proxy"}'
+# curl localhost:7090/proxies/Telegram -X PUT -d '{"name":"Proxy"}'
+# curl localhost:7090/proxies/Speedtest -X PUT -d '{"name":"DIRECT"}'
+# curl localhost:7090/proxies/Microsoft -X PUT -d '{"name":"DIRECT"}'
 ```
 
 
