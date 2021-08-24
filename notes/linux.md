@@ -74,3 +74,8 @@ A collection of my notes while using Linux
   ```bash
   export DISPLAY={desktop_ip}:0
   ```
+
+
+## Ubuntu用清华源安装Docker
+
+[Link](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/)

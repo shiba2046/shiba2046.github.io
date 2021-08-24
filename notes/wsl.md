@@ -40,6 +40,8 @@ proxy(){
 2. Set DISPLAY
 
   ```bash
+
+  # Any one would work
   export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 
   export DISPLAY="`sed -n 's/nameserver //p' /etc/resolv.conf`:0"
@@ -63,8 +65,16 @@ Need replace space ` ` with `%s`
 ast(){
   adb shell input text "${1/ /%s}"
 }
-```
 
+# Adb send file
 asf(){
   adb push ${$1} /sdcard/Download/
 }
+```
+
+
+# thefuck slow in ZSH
+
+```bash
+echo "excluded_search_path_prefixes = ['/mnt/']" >> ~/.config/thefuck/settings.py
+```
