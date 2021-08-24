@@ -4,6 +4,32 @@ title: Notes on Windows Subsystem Linux
 permalink: /wsl/
 ---
 
+# WSL HOST IP
+```bash
+export WSL_HOST=`grep nameserver /etc/resolv.conf| cut -d ' ' -f 2`
+export PROXY=$WSL_HOST:7890
+```
+
+# Set Proxy function
+```bash
+proxy(){
+  case $1 in
+  on)
+    export http_proxy=http://$PROXY
+    export https_proxy=https://$PROXY
+    ;;
+  off)
+    unset http_proxy
+    unset https_proxy
+    ;;
+  *)
+    echo "Usage: proxy on|off"
+    echo http_proxy=$http_proxy
+    echo https_proxy=$https_proxy
+    ;;
+  esac
+}
+```
 # Run graphical with X
 
 [Notes](https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242)
