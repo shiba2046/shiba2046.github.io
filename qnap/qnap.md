@@ -4,6 +4,9 @@ title: "QNAP笔记"
 permalink: /qnap/
 ---
 
+# Hardware
+
+CPU: J3455 
 
 [为 Container Station 更换镜像](http://einverne.github.io/post/2020/01/qnap-docker-registry-mirror.html)
 [替换默认 shell 为 zsh](http://einverne.github.io/post/2019/05/qnap-change-default-login-shell-to-zsh.html)
