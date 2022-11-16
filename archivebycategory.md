@@ -27,7 +27,7 @@ sitemap: false
                 <h3>
                     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
                         {{ post.title }} 
-                    </a> - {{ post.date | date: date_to_string }}
+                    </a> - {{ post.date | date_to_string }}
                 </h3>
                 <span class="post-meta">
                     <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>

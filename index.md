@@ -1,11 +1,16 @@
 ---
-layout: home
-list_title: Read our latest posts
+# layout: home
+# list_title: Read our latest posts
 title: ""
+layout: page
+# menubar_toc: true
+# toc_title: 目录
+show_sidebar: true
 ---
 
 # Notes 
 A collection of my notes while using Linux [Link](notes/linux.md)
+
 Dedicated notes on WSL [Link](notes/wsl.md)
 
 Readme [Link](/README.md)
@@ -15,18 +20,22 @@ Working Diary [Link](working-diary.md)
 Similarly, a place to put my notes while using Python, for easy reference [Link](notes/python.md)
 
 # Blog Posts
+
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
         <div>
-            { % assign date_format = site.minima.date_format | default: date_to_string % }
             
-            <span class="post-meta">
-                {{ post.date | date: date_format }}
-            </span>
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            
+            
             <h3>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape}}
+                
+                <span class="post-meta">
+                    {{ post.date | date: date_format }}
+                </span>
                 </a>
             </h3>
         </div>

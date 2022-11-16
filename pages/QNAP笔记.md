@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "QNAP笔记"
+# layout: default
+# title: "QNAP笔记"
 # permalink: /qnap/
 ---
 
@@ -25,7 +25,7 @@ title: "QNAP笔记"
   {% for post in site.posts | where: "category", "qnap" %}
     <li>
         <div>
-            <!-- {{ % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }} -->
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <span class="post-meta">
                 {{ post.date | date_to_string }}
             </span>

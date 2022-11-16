@@ -1,8 +1,8 @@
 ---
-date: 2022-11-16
+# date: 2022-11-16
 categories: qnap
 title: Update QNAP firmware manually
-layout: post
+# layout: post
 ---
 
 1. Create tmpfs space and mount as `/mnt/update`
