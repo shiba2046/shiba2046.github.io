@@ -27,10 +27,10 @@ sitemap: false
                 <h3>
                     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
                         {{ post.title }} 
-                    </a>
+                    </a> - {{ post.date | date: date_to_string }}
                 </h3>
                 <span class="post-meta">
-                    {{ post.date | date: date_format }}
+                    
                     <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
                 </span>
                 
