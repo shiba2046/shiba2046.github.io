@@ -19,7 +19,8 @@ Similarly, a place to put my notes while using Python, for easy reference [Link]
   {% for post in site.posts %}
     <li>
         <div>
-            {{ % assign date_format = site.minima.date_format | default: "%Y-%b %-d" % }}
+            { % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }
+            
             <span class="post-meta">
                 {{ post.date | date: date_format }}
             </span>
