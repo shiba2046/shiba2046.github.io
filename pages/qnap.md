@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "QNAP笔记"
-permalink: /qnap/
+# permalink: /qnap/
 ---
 
 # Hardware

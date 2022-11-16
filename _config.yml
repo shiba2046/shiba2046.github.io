@@ -6,3 +6,11 @@ author: shiba2046
 lsi: true
 safe: false
 theme: minima
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "pages"
+    values:
+      layout: "post"

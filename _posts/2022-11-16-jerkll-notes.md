@@ -7,6 +7,10 @@ tags:
 
 ---
 
+# Reference
+
+(https://jekyllrb.com/docs/posts/)
+
 
 #  List posts
 
@@ -23,4 +27,7 @@ tags:
 </ul>
 ```
 
+# Page variables
+
+(http://jekyllrb.com/docs/variables/#page-variables)
 
