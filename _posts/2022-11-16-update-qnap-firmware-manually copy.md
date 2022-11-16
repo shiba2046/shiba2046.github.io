@@ -18,21 +18,28 @@ cd /mnt/update
 
 
 3. Download the firmware file to the NAS:
+
 ```bash
 # /mnt/update
 wget https://download.qnap.com.cn/Storage/TS-X53B/TS-X53B_20221022-5.0.1.2194.zip
 ```
 
 4. Unzip the file
+
 ```bash
 # /mnt/update
 unzip TS-X53B_20221022-5.0.1.2194.zip
 ```
 
 5. Run the update script
+
 ```bash
 # /mnt/update
 /etc/init.d/update.sh TS-X53B_20221022-5.0.1.2194.img
 ```
 
 6. Reboot
+
+```
+reboot
+```

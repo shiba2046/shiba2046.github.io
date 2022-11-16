@@ -7,13 +7,15 @@ permalink: /qnap/
 # Hardware
 
 ## CPU
-Model: J3455 
-Apollo Lake
-Q3'16
-14nm
-4 Core 4 Threads
-Base 1.5GHz, Boost 2.3GHz
 
+- Model: J3455 
+- Apollo Lake
+- Q3'16
+- 14nm
+- 4 Core 4 Threads
+- Base 1.5GHz, Boost 2.3GHz
+
+# Links
 [为 Container Station 更换镜像](http://einverne.github.io/post/2020/01/qnap-docker-registry-mirror.html)
 [替换默认 shell 为 zsh](http://einverne.github.io/post/2019/05/qnap-change-default-login-shell-to-zsh.html)
 
@@ -23,7 +25,7 @@ Base 1.5GHz, Boost 2.3GHz
   {% for post in site.categories[qnap] %}
     <li>
         <div>
-            { % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }
+            {{ % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }}
             <span class="post-meta">
                 {{ post.date | date: date_format }}
             </span>
