@@ -22,16 +22,16 @@ permalink: /qnap/
 
 # Posts
 <ul class="post-list">
-  {% for post in site.posts.qnap %}
+  {% for post in site.posts | where: "category", "qnap" %}
     <li>
         <div>
-            {{ % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }}
+            <!-- {{ % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }} -->
             <span class="post-meta">
-                {{ post.date | date: date_format }}
+                {{ post.date | date_to_string }}
             </span>
             <h3>
                 <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape}}
+                    {{ post.title | escape }}
                 </a>
             </h3>
         </div>

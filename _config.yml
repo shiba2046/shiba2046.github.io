@@ -1,8 +1,7 @@
 # Site settings
 title: shiba2046
 description: Blog to record the stuff I always forget
-author:
-  name: shiba2046
+author: shiba2046
   
 lsi: true
 safe: false
