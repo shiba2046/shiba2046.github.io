@@ -15,10 +15,28 @@ Working Diary [Link](working-diary.md)
 Similarly, a place to put my notes while using Python, for easy reference [Link](notes/python.md)
 
 # Blog Posts
-<ul>
+<ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date }} - {{ post.title }}</a>
+        <div>
+            { % assign date_format = site.minima.date_format | default: "%Y-%b %-d" % }
+            <span class="post-meta">
+                {{ post.date | date: date_format }}
+            </span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape}}
+                </a>
+            </h3>
+        </div>
+        {% if post.featured_image %}
+            <div class="featured-image">
+            <img
+                src="{{ '/assets/' | append: post.featured_image | relative_url }}"
+            />
+            </div>
+        {% endif %}
+
     </li>
   {% endfor %}
 </ul>
