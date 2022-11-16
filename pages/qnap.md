@@ -22,7 +22,7 @@ permalink: /qnap/
 
 # Posts
 <ul class="post-list">
-  {% for post in site.posts | where: 'cateo %}
+  {% for post in site.posts.qnap %}
     <li>
         <div>
             {{ % assign date_format = site.minima.date_format | default: "%b %-d, %Y" % }}
