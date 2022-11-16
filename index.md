@@ -1,6 +1,7 @@
 ---
-layout: default
-title: "Welcome"
+layout: home
+list_title: Read our latest posts
+title: ""
 ---
 
 # Hello
