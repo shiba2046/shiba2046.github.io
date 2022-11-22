@@ -8,14 +8,28 @@ safe: false
 # theme: minimal
 remote_theme: chrisrhymes/bulma-clean-theme
 
+paginate: 5
+paginate_path: "/blog/page:num"
 defaults:
   
   -
     scope:
       path: ""
+      type: "pages"
     values:
-      layout: "page"
-      
+      # layout: "page"
+      # author: "pengf"
+      show_sidebar: true
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "PF"
+      layout: "post"
+      show_sidebar: true
+            
   -
     scope:
       path: "blog"
@@ -51,3 +65,10 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme      
+  - jekyll-paginate
+  - jekyll-sitemap
+
+livereload: true
+
+sass:
+  style: compressed

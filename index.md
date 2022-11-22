@@ -9,15 +9,7 @@ show_sidebar: true
 ---
 
 # Notes 
-A collection of my notes while using Linux [Link](notes/linux.md)
 
-Dedicated notes on WSL [Link](notes/wsl.md)
-
-Readme [Link](/README.md)
-
-Working Diary [Link](working-diary.md)
-
-Similarly, a place to put my notes while using Python, for easy reference [Link](notes/python.md)
 
 # Blog Posts
 
