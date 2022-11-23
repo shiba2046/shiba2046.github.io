@@ -1,3 +1,9 @@
+---
+title: 常用Openwrt插件下载
+categories: openwrt
+summary: |-
+    常用的一些Openwrt插件下载
+---
 
 # 必备的一些插件
 

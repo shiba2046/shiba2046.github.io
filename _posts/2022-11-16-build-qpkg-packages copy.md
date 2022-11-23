@@ -2,7 +2,7 @@
 # date: 2022-11-16
 categories: qnap
 title: Build QNAP QPKG Packages
-# layout: post
+layout: post
 ---
 
 

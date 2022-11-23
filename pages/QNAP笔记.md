@@ -1,7 +1,7 @@
 ---
 # layout: default
 # title: "QNAP笔记"
-# permalink: /qnap/
+permalink: /qnap/
 ---
 
 # Hardware
@@ -20,32 +20,6 @@
 [替换默认 shell 为 zsh](http://einverne.github.io/post/2019/05/qnap-change-default-login-shell-to-zsh.html)
 
 
-# Posts
-<ul class="post-list">
-  {% for post in site.posts | where: "category", "qnap" %}
-    <li>
-        <div>
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-            <span class="post-meta">
-                {{ post.date | date_to_string }}
-            </span>
-            <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                </a>
-            </h3>
-        </div>
-        {% if post.featured_image %}
-            <div class="featured-image">
-            <img
-                src="{{ '/assets/' | append: post.featured_image | relative_url }}"
-            />
-            </div>
-        {% endif %}
-
-    </li>
-  {% endfor %}
-</ul>
 
 # cd into QPKG package folder
 ```
@@ -78,3 +52,32 @@ curl localhost:7090/configs -X PUT -d '{"path": "/root/.config/clash/config.yaml
 ```
 
 
+# Posts
+<ul class="post-list">
+
+  
+
+  {% for post in site.categories.qnap  %}
+    <li>
+        <div>
+            {% assign date_format =  "%b %-d, %Y" %}
+            <span class="post-meta">
+                {{ post.date | date: date_format }}
+            </span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+        </div>
+        {% if post.featured_image %}
+            <div class="featured-image">
+            <img
+                src="{{ '/assets/' | append: post.featured_image | relative_url }}"
+            />
+            </div>
+        {% endif %}
+
+    </li>
+  {% endfor %}
+</ul>

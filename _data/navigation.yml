@@ -1,0 +1,9 @@
+- name: All Posts
+  link: /blog/
+
+- name: By Category
+  link: /categories/
+
+- name: QNAP
+  link: /qnap/
+
